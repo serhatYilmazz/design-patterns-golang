@@ -8,4 +8,8 @@ Making two interfaces that aren't compatible, make them compatible. Converts the
 
 ## Use-Case
 
+- First we have only `mp3` player. We can only play `.mp3` files. 
+- We want to play `.mp4` and `.vlc` files as well.
+- But we don't want to change anything that written before.
+
 ![case](asset/use-case.png)
