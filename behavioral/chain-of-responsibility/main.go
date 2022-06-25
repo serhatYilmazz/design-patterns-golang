@@ -10,8 +10,7 @@ func main() {
 	examination := handler.DoctorExamination{}
 	reception := handler.Reception{}
 
-	reception.SetNext(&examination)
-	examination.SetNext(&cashier)
+	reception.SetNext(&examination).SetNext(&cashier)
 
 	p := patient.Patient{}
 

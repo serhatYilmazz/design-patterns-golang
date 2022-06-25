@@ -9,8 +9,9 @@ type Reception struct {
 	next Department
 }
 
-func (r *Reception) SetNext(nextDep Department) {
+func (r *Reception) SetNext(nextDep Department) Department {
 	r.next = nextDep
+	return nextDep
 }
 
 func (r *Reception) Execute(p *patient.Patient) {

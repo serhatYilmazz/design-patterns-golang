@@ -19,6 +19,7 @@ func (c *Cashier) Execute(patient *patient.Patient) {
 	fmt.Println("Patient is already paid the price")
 }
 
-func (c *Cashier) SetNext(department Department) {
+func (c *Cashier) SetNext(department Department) Department {
 	c.next = department
+	return department
 }

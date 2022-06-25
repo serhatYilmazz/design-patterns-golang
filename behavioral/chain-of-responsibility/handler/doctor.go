@@ -22,6 +22,7 @@ func (d *DoctorExamination) Execute(patient *patient.Patient) {
 	d.next.Execute(patient)
 }
 
-func (d *DoctorExamination) SetNext(department Department) {
+func (d *DoctorExamination) SetNext(department Department) Department {
 	d.next = department
+	return department
 }
